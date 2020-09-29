@@ -1,13 +1,8 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: brown; icon-glyph: magic;
-// The script shows the latest article
-// from MacStories in a widget on your
-// Home screen. Go to your Home screen
-// to set up the script in a widget.
-// The script will present a preview
-// of the widget when running in the
-// app.
+// The script picks a random word from
+// a previously exported List from the
+// dictionary app called Japanese
+// -------
+
 let items = await loadItems()
 let widget = await createWidget(items)
 // Check if the script is running in
