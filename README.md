@@ -1,5 +1,7 @@
 # Widget for Japanese app
 
+![](Documentation/widget.jpg)
+
 This [Japanese dictionary app](https://apps.apple.com/us/app/japanese/id290664053), made by [Renzo Inc](https://www.japaneseapp.com), hasn't been updated with widgets yet, so I decided to take matters into my hands and this is the outcome – a widget created via Scriptable to display words and meanings exported by the Japanese app. You can also interact with the widget to open the word directly in the Japanese app.
 
 ## Getting Started
@@ -37,7 +39,7 @@ Add Scriptable widget, tap & hold the widget and tap *Edit Widget*, tap *Choose*
 
 Add Widget | Open Widget configurator | Tap Choose and select Japanese Widget
 --- | ---
-![](Documentation/w-step1.JPG) | ![](Documentation/w-step2.JPG) | ![](Documentation/w-step3.JPG)
+![](Documentation/w-step1.jpg) | ![](Documentation/w-step2.jpg) | ![](Documentation/w-step3.jpg)
 
 ## Authors
 
