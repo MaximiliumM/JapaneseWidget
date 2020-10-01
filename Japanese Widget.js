@@ -31,6 +31,7 @@ async function createWidget(items) {
 		
 	// Calculate font size for given word
 	let fontSize = (24 - word.length) - Math.round((word.length / 4))
+	if (word.includes("List")) { fontSize = 30 }
 	
 	let gradient = new LinearGradient()
 	gradient.locations = [0, 0.8]
