@@ -28,6 +28,10 @@ Open your Lists | Create a List if you haven't already
 --- | ---
 ![](Documentation/step1.JPG) | ![](Documentation/step2.JPG)
 
+Tap ... button | Tap Share and Add To Japanese Widget
+--- | ---
+![](Documentation/step3.JPG) | ![](Documentation/step4.JPG)
+
 ## Authors
 
 * **Felipe Manoeli** - [MaximiliumM](https://www.twitter.com/MaximiliumM)
