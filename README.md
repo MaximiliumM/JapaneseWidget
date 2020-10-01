@@ -8,7 +8,7 @@ This [Japanese dictionary app](https://apps.apple.com/us/app/japanese/id29066405
 
 ## Getting Started
 
-To get started, you need to export a list of words created in the Japanese app. If you have created one before, you'll find them on the 'Lists' tab within the app. I recommend using [this Shortcut](https://www.icloud.com/shortcuts/6a3070ac49c54502ab44905f74a2c353) I created to help to setup the widget.
+To get started, you need to export a list of words created in the Japanese app. If you have created one before, you'll find them on the 'Lists' tab within the app. I recommend using [this Shortcut](https://www.icloud.com/shortcuts/c0cf256f245b426caa15d781e7ffe342) I created to help to setup the widget.
 
 
 ## Prerequisites
@@ -21,7 +21,7 @@ To get started, you need to export a list of words created in the Japanese app. 
 ### STEP 1
 *Make sure you have both apps from the prerequisites section installed before continuing*
 
-Install the [Add To Japanese Widget](https://www.icloud.com/shortcuts/6a3070ac49c54502ab44905f74a2c353) shortcut to your Shortcuts app.
+Install the [Add To Japanese Widget](https://www.icloud.com/shortcuts/c0cf256f245b426caa15d781e7ffe342) shortcut to your Shortcuts app.
 
 Run the Shortcut once to download the necessary files.
 
