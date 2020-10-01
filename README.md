@@ -24,6 +24,10 @@ Run the Shortcut once to download the necessary files.
 ### STEP 2
 Open the [Japanese](https://apps.apple.com/us/app/japanese/id290664053) app, go to the Lists tab, open your list, tap the *...* button, tap *Share* and tap *Add To Japanese Widget* shortcut.
 
+Open your Lists | Create a List if you haven't already
+--- | ---
+![](Documentation/step1.JPG) | ![](Documentation/step2.JPG)
+
 ## Authors
 
 * **Felipe Manoeli** - [MaximiliumM](https://www.twitter.com/MaximiliumM)
