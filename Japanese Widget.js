@@ -87,6 +87,10 @@ async function loadItems() {
 	let dir = fm.documentsDirectory() + "/Japanese Widget/"
 	let path = fm.joinPath(dir, "Japanese Words List.txt")
 	
+	if (!fm.fileExists(path)) { 
+		return ["List Not Found!", "", "You need to create and export a List in the Japanese app"]
+	}
+	
 	let text = fm.readString(path)
 	let list = text.split('\n')
 	
