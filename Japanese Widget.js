@@ -1,3 +1,6 @@
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
+// icon-color: brown; icon-glyph: magic;
 // The script picks a random word from
 // a previously exported List from the
 // dictionary app called Japanese
@@ -10,7 +13,7 @@ let widget = await createWidget(items)
 // the widget to easier debug it.
 
 if (!config.runsInWidget) {
-	await widget.presentSmall()
+	await widget.presentMedium()
 }
 
 // Tell the system to show the widget.
@@ -22,18 +25,27 @@ async function createWidget(items) {
 	let word = items[0]
 	let reading = items[1]
 	let meaning = items[2]
-	let img = items[3]
 	
+	// Determine size factor
+	let sizeFactor = config.widgetFamily == "large" ? 2 : 1
+		
 	// Calculate font size for given word
 	let fontSize = (24 - word.length) - Math.round((word.length / 4))
 	
 	let gradient = new LinearGradient()
 	gradient.locations = [0, 0.8]
 	gradient.colors = [
-		new Color("#CE2C26", 1),
+		new Color("#CF2C26", 1),
 		new Color("#B12420", 0)
 	]
+	
 	let w = new ListWidget()
+	
+	// Get background image based on widget size
+	let fm = FileManager.iCloud()
+	let dir = fm.documentsDirectory() + "/Japanese Widget/"
+	let path = fm.joinPath(dir, "bg-" + config.widgetFamily + ".png")
+	let img = Image.fromFile(path)
 	
 	// Define URL 
 	let url = encodeURI('japanese://entry/' + word)
@@ -49,11 +61,11 @@ async function createWidget(items) {
 	w.addSpacer()
 	// Show word as heading
 	let titleTxt = w.addText(word)
-	titleTxt.font = Font.boldSystemFont(fontSize)
+	titleTxt.font = Font.boldSystemFont(fontSize * sizeFactor)
 	titleTxt.textColor = Color.white()
 	// Show reading
 	let subTxt = w.addText(reading)
-	subTxt.font = Font.heavySystemFont(9)
+	subTxt.font = Font.heavySystemFont(9 * sizeFactor)
 	subTxt.textColor = Color.white()
 	subTxt.textOpacity = 0.9
 	// Add spacing below reading
@@ -106,9 +118,6 @@ async function loadItems() {
 		word = word[0]
 		meaning = newList[randomIndex]
 	}
-	
-	path = fm.joinPath(dir, "nihongo.png")
-	let img = Image.fromFile(path)
 
-	return [word, reading, meaning, img]
+	return [word, reading, meaning]
 }
